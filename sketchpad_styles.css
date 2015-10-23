@@ -1,0 +1,98 @@
+body{
+    font-family: "Arial", "Tahoma", "sans-serif";
+    font-size: 16px;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #a9a9a9;
+}
+
+#page-wrapper{
+    display: block;
+    width: 1000px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+#page-wrapper h1, #page-wrapper p{
+    text-align: center;
+}
+
+#info_wrapper{
+    overflow: hidden;
+    width: 890px;
+    margin: 0 auto;
+}
+
+.info_divs{
+    background-color: yellowgreen;
+    float: left;
+    border: 5px solid brown;
+}
+
+.info_divs:nth-child(1){
+    text-align: center;
+    width: 160px;
+    margin: 10px auto;
+    height: 200px;
+}
+
+.info_divs:nth-child(2){
+    width: 520px;
+    margin: 10px;
+}
+
+.info_divs:nth-child(3){
+    text-align: center;
+    width: 160px;
+    margin: 10px auto;
+    height: 200px;
+    
+}
+
+img{
+    height: 45px;
+    width: 45px;
+}
+
+#grid{
+    overflow: hidden;
+    width: 960px;
+    margin: 0 auto;
+    padding: 1px;
+}
+
+.squares{
+    display: block;
+    float: left;
+    background-color: #333;
+    box-sizing: border-box;  
+}
+
+.hovered_square{
+    background-color: #E9E2D3;
+}
+
+#buttons_div{
+    display: block;
+    overflow: hidden;
+    width: 350px;
+    margin: 10px auto;
+    border: 2px solid navy;
+}
+
+#buttons_div input[type=text]{
+    text-align: center;
+}
+
+#buttons_div input[type=button]{
+    margin-top: 10px;
+    padding: 2px;
+}
+
+#buttons_div input[type=button]:first-child{
+    margin-left: 40px;
+}
+
+#buttons_div div:first-child{
+    clear: both;
+}

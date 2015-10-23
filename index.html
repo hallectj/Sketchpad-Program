@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sketchpad Program</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="sketchpad_styles.css" />
+        <script type="text/javascript" src="JQuery.js"></script>
+    </head>
+    
+    <body>
+        <div id="page-wrapper">
+            <div id="info_wrapper">
+                <div class="info_divs">
+                    <h4>Etcha-Sketch Program</h4>
+                    <p>Programmed by: <strong>Travis Halleck</strong></p>
+                    <p><a href="https://github.com/hallectj" target="_blank"><img src="github_icon.png" /></a></p>
+                </div>
+                
+                <div class="info_divs">
+                    <h1>Etcha-Sketch</h1>
+                    <p>Type in a an integer between 1-128 to get started</p>
+                        <div id="buttons_div">
+                            <label>Number of squares: </label><input type="text" id="grid_square_size" size="4">
+                            <label>Borders on/off</label><input type="checkbox" name="border_check" id="borders_yes_no">
+                            <div>
+                               <input type="button" value="sketch it" id="sketchIt">
+                               <input type="button" value="random color" id="randomColor">
+                               <input type="button" value="clear grid" id="clear">
+                            </div>
+                        </div>
+                </div>
+                
+                <div class="info_divs">
+                    <p>Etcha-sketch program is part of the Odin Project Curriculum.</p>
+                    <p>You can participate too <a href="http://www.theodinproject.com" target="_blank">The Odin Project</a></p>
+                </div>
+        </div>
+            
+        <div id="grid"></div>
+        <script type="text/javascript" src="skethpad.js"></script>   
+    </body>
+</html>
