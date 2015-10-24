@@ -27,7 +27,12 @@ function isBorderChecked() {
 }
 
 function getUserGridSize() {
-    return document.getElementById("grid_square_size").value;     
+    var userVal = document.getElementById("grid_square_size").value; 
+    if((userVal < 1) || (userVal > 60)){
+        userVal = 10;
+        document.getElementById("grid_square_size").value = "10";
+    }
+    return Math.floor(userVal);
 }
 
 function clearGrid() {
@@ -36,6 +41,7 @@ function clearGrid() {
         "opacity": "1"
     });
     $(".squares").unbind();    //just as a precaution, remove any binding event handlers
+    $(".squares").remove();
 }
 
 function sketch() {
@@ -52,7 +58,7 @@ function sketch() {
 }
 
 var randomColorsGrid = function() {   
-    var userSize = getUserGridSize();
+    var userSize = getUserGridSize() || 10;
     clearGrid();
     $('input[name=border_check]').attr('checked', false);
     $(".squares").remove();
@@ -77,6 +83,7 @@ var randomColorsGrid = function() {
 $(document).ready(function() {
     //assignment calls for default grid on load
     var userSize = getUserGridSize() || 10;
+    document.getElementById("grid_square_size").value = 10;
     $('input[name=border_check]').attr('checked', false);
     isBorderChecked();
     sketch();
